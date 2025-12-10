@@ -4,3365 +4,594 @@
         "difficulty": "Fácil",
         "question_text": "Qual função é usada para exibir mensagens no console em Python?",
         "correct_answer": "print()",
-        "incorrect_answers": [
-            "echo()",
-            "console.log()",
-            "System.out.println()"
-        ]
+        "incorrect_answers": ["echo()", "console.log()", "System.out.println()"]
     },
     {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual protocolo é responsável pela atribuição automática de endereços IP?",
-        "correct_answer": "DHCP",
-        "incorrect_answers": [
-            "DNS",
-            "HTTP",
-            "FTP"
-        ]
+        "category": "Python",
+        "difficulty": "Fácil",
+        "question_text": "Qual função é usada para ler dados digitados pelo usuário em Python?",
+        "correct_answer": "input()",
+        "incorrect_answers": ["read()", "scan()", "get()"]
+    },
+    {
+        "category": "Python",
+        "difficulty": "Fácil",
+        "question_text": "Qual função retorna o tamanho (número de itens) de uma lista ou string em Python?",
+        "correct_answer": "len()",
+        "incorrect_answers": ["size()", "count()", "length()"]
+    },
+    {
+        "category": "Python",
+        "difficulty": "Fácil",
+        "question_text": "Qual função gera uma sequência de números, muito usada em loops 'for'?",
+        "correct_answer": "range()",
+        "incorrect_answers": ["seq()", "list()", "loop()"]
     },
     {
         "category": "Hardware",
         "difficulty": "Fácil",
-        "question_text": "Qual componente armazena dados temporariamente enquanto o computador está ligado?",
+        "question_text": "Qual componente armazena dados temporariamente apenas enquanto o computador está ligado?",
         "correct_answer": "Memória RAM",
-        "incorrect_answers": [
-            "Disco Rígido (HD)",
-            "Processador",
-            "Placa de Vídeo"
-        ]
+        "incorrect_answers": ["Disco Rígido (HD)", "Processador", "Placa Mãe"]
+    },
+    {
+        "category": "Hardware",
+        "difficulty": "Fácil",
+        "question_text": "Qual componente é responsável por armazenar dados permanentemente, mesmo sem energia?",
+        "correct_answer": "Disco Rígido (HD) / SSD",
+        "incorrect_answers": ["Memória RAM", "Processador", "Fonte"]
+    },
+    {
+        "category": "Hardware",
+        "difficulty": "Fácil",
+        "question_text": "Qual componente é considerado o cérebro do PC, responsável por executar instruções lógicas e matemáticas?",
+        "correct_answer": "Processador (CPU)",
+        "incorrect_answers": ["Fonte de Alimentação", "Cooler", "Memória ROM"]
+    },
+    {
+        "category": "Banco de Dados",
+        "difficulty": "Médio",
+        "question_text": "Em SQL, qual comando é usado para extrair dados de um banco de dados?",
+        "correct_answer": "SELECT",
+        "incorrect_answers": ["GET", "OPEN", "EXTRACT"]
     },
     {
         "category": "Banco de Dados",
         "difficulty": "Médio",
         "question_text": "Em SQL, qual comando é usado para alterar dados existentes em uma tabela?",
         "correct_answer": "UPDATE",
-        "incorrect_answers": [
-            "MODIFY",
-            "CHANGE",
-            "ALTER"
-        ]
+        "incorrect_answers": ["MODIFY", "CHANGE", "ALTER"]
+    },
+    {
+        "category": "Banco de Dados",
+        "difficulty": "Médio",
+        "question_text": "Qual comando SQL é usado para criar uma nova tabela?",
+        "correct_answer": "CREATE TABLE",
+        "incorrect_answers": ["MAKE TABLE", "NEW TABLE", "ADD TABLE"]
+    },
+    {
+        "category": "Banco de Dados",
+        "difficulty": "Médio",
+        "question_text": "Qual comando SQL é usado para apagar completamente uma tabela e sua estrutura?",
+        "correct_answer": "DROP TABLE",
+        "incorrect_answers": ["DELETE TABLE", "ERASE TABLE", "REMOVE TABLE"]
+    },
+    {
+        "category": "Redes",
+        "difficulty": "Médio",
+        "question_text": "Qual protocolo é responsável pela atribuição automática de endereços IP na rede?",
+        "correct_answer": "DHCP",
+        "incorrect_answers": ["DNS", "FTP", "HTTP"]
+    },
+    {
+        "category": "Redes",
+        "difficulty": "Médio",
+        "question_text": "Qual protocolo traduz nomes de domínio (ex: www.google.com) para endereços IP?",
+        "correct_answer": "DNS",
+        "incorrect_answers": ["TCP", "DHCP", "VPN"]
+    },
+    {
+        "category": "Redes",
+        "difficulty": "Médio",
+        "question_text": "Qual protocolo é a base da comunicação de dados na World Wide Web?",
+        "correct_answer": "HTTP",
+        "incorrect_answers": ["HTML", "FTP", "SMTP"]
+    },
+    {
+        "category": "Redes",
+        "difficulty": "Médio",
+        "question_text": "Qual protocolo de transporte garante a entrega confiável e ordenada dos dados?",
+        "correct_answer": "TCP",
+        "incorrect_answers": ["UDP", "IP", "ICMP"]
+    },
+    {
+        "category": "Segurança",
+        "difficulty": "Difícil",
+        "question_text": "Qual ataque consiste em tentar adivinhar uma senha testando todas as combinações possíveis?",
+        "correct_answer": "Brute Force (Força Bruta)",
+        "incorrect_answers": ["Phishing", "SQL Injection", "Ransomware"]
+    },
+    {
+        "category": "Segurança",
+        "difficulty": "Difícil",
+        "question_text": "Qual ataque visa tornar um serviço indisponível sobrecarregando-o com tráfego?",
+        "correct_answer": "DDoS (Negação de Serviço Distribuída)",
+        "incorrect_answers": ["Man-in-the-middle", "Trojan", "Spyware"]
     },
     {
         "category": "Segurança",
         "difficulty": "Difícil",
         "question_text": "O que é Phishing?",
-        "correct_answer": "Uma tentativa fraudulenta de obter informações sensíveis fingindo ser uma entidade confiável.",
-        "incorrect_answers": [
-            "Um tipo de vírus que apaga o HD.",
-            "Um ataque de negação de serviço (DDoS).",
-            "Um software de criptografia."
-        ]
+        "correct_answer": "Tentativa fraudulenta de obter dados sensíveis fingindo ser uma entidade confiável.",
+        "incorrect_answers": ["Um vírus que criptografa arquivos.", "Uma técnica de invasão de banco de dados.", "Um software de monitoramento de rede."]
     },
     {
         "category": "Git",
         "difficulty": "Médio",
-        "question_text": "Qual comando cria uma nova branch e muda para ela imediatamente?",
-        "correct_answer": "git checkout -b nome-branch",
-        "incorrect_answers": [
-            "git branch new",
-            "git push origin",
-            "git merge"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "HTTPS",
-            "FTP",
-            "SCP"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "list()",
-            "loop()",
-            "array()"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Processador",
-            "RAM",
-            "BIOS"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "hashmap",
-            "array",
-            "ponteiro"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "array",
-            "ponteiro",
-            "hashmap"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "MAKE TABLE",
-            "FORM TABLE",
-            "BUILD TABLE"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "Cooler",
-            "Fonte",
-            "SSD"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "ponteiro",
-            "array",
-            "hashmap"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "condicional",
-            "classe"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "SQL Injection",
-            "Trojan",
-            "Worm"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
+        "question_text": "Qual comando Git é usado para copiar um repositório remoto para sua máquina local?",
         "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git import",
-            "git new"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "PHP",
-            "HTML",
-            "JavaScript"
-        ]
+        "incorrect_answers": ["git copy", "git pull", "git download"]
     },
     {
         "category": "Git",
         "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
+        "question_text": "Qual comando Git é usado para unir o histórico de duas branches?",
         "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git join",
-            "git union",
-            "git connect"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "ARP",
-            "UDP",
-            "SSH"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "hashmap",
-            "ponteiro",
-            "array"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Man-in-the-middle",
-            "Phishing",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'input()' em Python?",
-        "correct_answer": "input()",
-        "incorrect_answers": [
-            "capture()",
-            "scan()",
-            "listen()"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git join",
-            "git connect",
-            "git union"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git connect",
-            "git join"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git new",
-            "git import"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "DHCP",
-            "SMTP",
-            "FTP"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "MAKE TABLE",
-            "BUILD TABLE",
-            "FORM TABLE"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "seq()",
-            "array()",
-            "loop()"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'input()' em Python?",
-        "correct_answer": "input()",
-        "incorrect_answers": [
-            "read()",
-            "capture()",
-            "scan()"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git new",
-            "git import"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "array",
-            "ponteiro",
-            "hashmap"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "ponteiro",
-            "hashmap",
-            "array"
-        ]
+        "incorrect_answers": ["git join", "git link", "git combine"]
     },
     {
         "category": "Programação Web",
         "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "HTML",
-            "PHP",
-            "JavaScript"
-        ]
+        "question_text": "Qual tecnologia é responsável por definir a estrutura e conteúdo de uma página web?",
+        "correct_answer": "HTML",
+        "incorrect_answers": ["CSS", "JavaScript", "PHP"]
     },
     {
         "category": "Programação Web",
         "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "PHP",
-            "HTML",
-            "JavaScript"
-        ]
+        "question_text": "Qual tecnologia é usada para estilizar a aparência (cores, fontes, layout) de páginas web?",
+        "correct_answer": "CSS",
+        "incorrect_answers": ["HTML", "XML", "Java"]
+    },
+    {
+        "category": "Programação Web",
+        "difficulty": "Médio",
+        "question_text": "Qual linguagem é utilizada para adicionar interatividade e manipular o DOM em páginas web?",
+        "correct_answer": "JavaScript",
+        "incorrect_answers": ["Java", "Python", "C++"]
     },
     {
         "category": "Algoritmos",
         "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "array",
-            "hashmap",
-            "ponteiro"
-        ]
+        "question_text": "Qual estrutura de controle é usada para tomar decisões baseadas em uma condição (Verdadeiro/Falso)?",
+        "correct_answer": "Condicional (IF/ELSE)",
+        "incorrect_answers": ["Laço de Repetição", "Array", "Função"]
     },
     {
-        "category": "Hardware",
+        "category": "Algoritmos",
         "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Cache",
-            "BIOS",
-            "RAM"
-        ]
+        "question_text": "Qual estrutura é utilizada para executar um bloco de código várias vezes?",
+        "correct_answer": "Laço de Repetição (Loop)",
+        "incorrect_answers": ["Variável", "Condicional", "Operador Lógico"]
     },
     {
-        "category": "Hardware",
+        "category": "Java",
         "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "BIOS",
-            "RAM",
-            "Processador"
-        ]
+        "question_text": "Qual palavra-chave é usada para aplicar herança em Java?",
+        "correct_answer": "extends",
+        "incorrect_answers": ["implements", "inherits", "instanceof"]
     },
     {
-        "category": "Programação Web",
+        "category": "Java",
         "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "PHP",
-            "HTML",
-            "JavaScript"
-        ]
+        "question_text": "Qual é o modificador de acesso que torna um atributo visível apenas dentro da própria classe?",
+        "correct_answer": "private",
+        "incorrect_answers": ["public", "protected", "static"]
     },
     {
-        "category": "Git",
+        "category": "Linux",
+        "difficulty": "Fácil",
+        "question_text": "Qual comando Linux mostra o diretório atual (caminho completo)?",
+        "correct_answer": "pwd",
+        "incorrect_answers": ["cd", "ls", "dir"]
+    },
+    {
+        "category": "Linux",
         "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git import",
-            "git new"
-        ]
+        "question_text": "Qual comando é usado para criar um novo diretório (pasta) no Linux?",
+        "correct_answer": "mkdir",
+        "incorrect_answers": ["mkfile", "touch", "newdir"]
     },
     {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "SSH",
-            "UDP",
-            "ARP"
-        ]
-    },
-    {
-        "category": "Segurança",
+        "category": "Linux",
         "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Man-in-the-middle",
-            "Brute Force",
-            "Phishing"
-        ]
+        "question_text": "Qual comando é usado para alterar as permissões de leitura/escrita de um arquivo?",
+        "correct_answer": "chmod",
+        "incorrect_answers": ["chown", "chgrp", "passwd"]
+    },
+    {
+        "category": "Banco de Dados",
+        "difficulty": "Fácil",
+        "question_text": "Qual comando SQL é usado para inserir novos registros em uma tabela?",
+        "correct_answer": "INSERT INTO",
+        "incorrect_answers": ["ADD TO", "UPDATE", "CREATE NEW"]
     },
     {
         "category": "Banco de Dados",
         "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "REMOVE TABLE",
-            "ERASE TABLE",
-            "DELETE STRUCT"
-        ]
+        "question_text": "Qual cláusula SQL é usada para ordenar os resultados de uma consulta?",
+        "correct_answer": "ORDER BY",
+        "incorrect_answers": ["SORT BY", "GROUP BY", "ALIGN BY"]
+    },
+    {
+        "category": "Git",
+        "difficulty": "Fácil",
+        "question_text": "Qual comando mostra o estado atual dos arquivos (modificados, staged, etc.) no Git?",
+        "correct_answer": "git status",
+        "incorrect_answers": ["git log", "git info", "git check"]
     },
     {
         "category": "Git",
         "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git connect",
-            "git join"
-        ]
+        "question_text": "Qual comando salva as alterações preparadas (staged) no histórico do repositório?",
+        "correct_answer": "git commit",
+        "incorrect_answers": ["git save", "git push", "git store"]
     },
     {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git connect",
-            "git join",
-            "git union"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "ERASE TABLE",
-            "REMOVE TABLE",
-            "DELETE STRUCT"
-        ]
-    },
-    {
-        "category": "Algoritmos",
+        "category": "Front-End",
         "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "condicional",
-            "classe"
-        ]
+        "question_text": "Qual tag HTML cria uma lista não ordenada (com marcadores/bolinhas)?",
+        "correct_answer": "<ul>",
+        "incorrect_answers": ["<ol>", "<li>", "<list>"]
     },
     {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "classe",
-            "atributo"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "SQL Injection",
-            "Trojan",
-            "Worm"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
+        "category": "Front-End",
         "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "DELETE STRUCT",
-            "ERASE TABLE",
-            "REMOVE TABLE"
-        ]
+        "question_text": "No modelo Box Model do CSS, o que fica entre a borda (border) e o conteúdo (content)?",
+        "correct_answer": "Padding",
+        "incorrect_answers": ["Margin", "Outline", "Spacing"]
     },
     {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "classe",
-            "condicional"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
+        "category": "JavaScript",
         "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "FORM TABLE",
-            "BUILD TABLE",
-            "MAKE TABLE"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "Node.js",
-            "CSS",
-            "SQL"
-        ]
+        "question_text": "Qual método é usado para selecionar um elemento HTML pelo seu ID?",
+        "correct_answer": "getElementById()",
+        "incorrect_answers": ["querySelector()", "selectId()", "getElement()"]
     },
     {
         "category": "Python",
         "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "length()",
-            "size()",
-            "count()"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "classe",
-            "atributo"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "JavaScript",
-            "PHP",
-            "HTML"
-        ]
+        "question_text": "Qual palavra-chave é usada para definir uma função em Python?",
+        "correct_answer": "def",
+        "incorrect_answers": ["function", "fun", "define"]
     },
     {
         "category": "Python",
         "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'input()' em Python?",
-        "correct_answer": "input()",
-        "incorrect_answers": [
-            "scan()",
-            "capture()",
-            "read()"
-        ]
+        "question_text": "Qual operador é usado para verificar igualdade de valores em Python (comparação)?",
+        "correct_answer": "==",
+        "incorrect_answers": ["=", "===", "equals"]
     },
     {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git connect",
-            "git join",
-            "git union"
-        ]
+        "category": "Redes",
+        "difficulty": "Fácil",
+        "question_text": "O que significa a sigla LAN?",
+        "correct_answer": "Local Area Network",
+        "incorrect_answers": ["Large Area Network", "Local Access Node", "Long Antenna Net"]
     },
     {
-        "category": "Programação Web",
+        "category": "Redes",
         "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "PHP",
-            "JavaScript",
-            "HTML"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "BUILD TABLE",
-            "MAKE TABLE",
-            "FORM TABLE"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git join",
-            "git connect"
-        ]
+        "question_text": "Qual dispositivo é usado para conectar diferentes redes e encaminhar pacotes entre elas?",
+        "correct_answer": "Roteador (Router)",
+        "incorrect_answers": ["Switch", "Hub", "Repetidor"]
     },
     {
         "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "Worm",
-            "Trojan",
-            "SQL Injection"
-        ]
-    },
-    {
-        "category": "Git",
         "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git new",
-            "git import"
-        ]
+        "question_text": "O que é um Firewall?",
+        "correct_answer": "Um sistema de segurança que monitora e controla o tráfego de rede.",
+        "incorrect_answers": ["Um antivírus para e-mails.", "Um cabo de rede blindado.", "Um tipo de senha forte."]
     },
     {
-        "category": "Algoritmos",
+        "category": "Metodologias Ágeis",
+        "difficulty": "Médio",
+        "question_text": "No Scrum, quem é o responsável por priorizar o Backlog do Produto?",
+        "correct_answer": "Product Owner (PO)",
+        "incorrect_answers": ["Scrum Master", "Time de Desenvolvimento", "Gerente de Projetos"]
+    },
+    {
+        "category": "Metodologias Ágeis",
         "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "array",
-            "hashmap",
-            "ponteiro"
-        ]
+        "question_text": "O que é uma Sprint?",
+        "correct_answer": "Um período de tempo fixo (time-boxed) para realizar um conjunto de tarefas.",
+        "incorrect_answers": ["Uma reunião diária.", "Uma lista de erros do sistema.", "Uma ferramenta de gestão."]
+    },
+    {
+        "category": "Lógica",
+        "difficulty": "Fácil",
+        "question_text": "Qual é o resultado da expressão lógica: (Verdadeiro E Falso)?",
+        "correct_answer": "Falso",
+        "incorrect_answers": ["Verdadeiro", "Nulo", "Indefinido"]
+    },
+    {
+        "category": "Hardware",
+        "difficulty": "Fácil",
+        "question_text": "Qual a principal vantagem de um SSD sobre um HD tradicional?",
+        "correct_answer": "Velocidade de leitura/gravação muito superior.",
+        "incorrect_answers": ["Custo por gigabyte mais barato.", "Maior capacidade de armazenamento máxima.", "Maior tamanho físico."]
+    },
+    {
+        "category": "Docker",
+        "difficulty": "Médio",
+        "question_text": "Qual comando lista os containers que estão em execução no momento?",
+        "correct_answer": "docker ps",
+        "incorrect_answers": ["docker list", "docker run", "docker show"]
+    },
+    {
+        "category": "API",
+        "difficulty": "Fácil",
+        "question_text": "Qual formato de dados é o mais comum para troca de informações em APIs REST modernas?",
+        "correct_answer": "JSON",
+        "incorrect_answers": ["XML", "HTML", "TXT"]
+    },
+    {
+        "category": "Estrutura de Dados",
+        "difficulty": "Médio",
+        "question_text": "Qual estrutura de dados segue o princípio FIFO (First In, First Out - Primeiro a entrar, primeiro a sair)?",
+        "correct_answer": "Fila (Queue)",
+        "incorrect_answers": ["Pilha (Stack)", "Árvore", "Grafo"]
+    },
+    {
+        "category": "DevOps",
+        "difficulty": "Difícil",
+        "question_text": "O que significa a sigla CI/CD?",
+        "correct_answer": "Continuous Integration / Continuous Delivery",
+        "incorrect_answers": ["Code Inspection / Code Debugging", "Cloud Integration / Cloud Data", "Computer Interface / Computer Design"]
+    },
+    {
+        "category": "Engenharia de Software",
+        "difficulty": "Médio",
+        "question_text": "O que é um Diagrama de Caso de Uso (UML)?",
+        "correct_answer": "Um diagrama que mostra as interações entre usuários (atores) e o sistema.",
+        "incorrect_answers": ["Um diagrama que mostra a estrutura do banco de dados.", "Um fluxograma de código.", "Um cronograma de projeto."]
+    },
+    {
+        "category": "Cloud Computing",
+        "difficulty": "Fácil",
+        "question_text": "Qual destes é um exemplo de serviço de computação em nuvem (Cloud)?",
+        "correct_answer": "AWS (Amazon Web Services)",
+        "incorrect_answers": ["Visual Studio Code", "Linux Ubuntu", "MySQL Workbench"]
+    },
+    {
+        "category": "Conceitos",
+        "difficulty": "Fácil",
+        "question_text": "Quantos bits formam 1 Byte?",
+        "correct_answer": "8 bits",
+        "incorrect_answers": ["4 bits", "16 bits", "1024 bits"]
+    },
+    {
+        "category": "Segurança",
+        "difficulty": "Médio",
+        "question_text": "O que é uma VPN?",
+        "correct_answer": "Rede Privada Virtual (cria uma conexão segura sobre uma rede pública).",
+        "incorrect_answers": ["Um antivírus de rede.", "Um protocolo de transferência de arquivos.", "Um tipo de memória RAM."]
+    },
+    {
+        "category": "Teste de Software",
+        "difficulty": "Médio",
+        "question_text": "O que é um Teste Unitário?",
+        "correct_answer": "Teste que verifica a menor parte testável de uma aplicação (ex: uma função ou método).",
+        "incorrect_answers": ["Teste realizado pelo cliente final.", "Teste de carga no servidor.", "Teste de interface gráfica."]
+    },
+    {
+        "category": "POO",
+        "difficulty": "Médio",
+        "question_text": "O que o 'construtor' de uma classe faz?",
+        "correct_answer": "Inicializa o objeto (instância) com valores iniciais.",
+        "incorrect_answers": ["Destrói o objeto da memória.", "Define os métodos da classe.", "Garante que o objeto seja acessível publicamente."]
+    },
+    {
+        "category": "POO",
+        "difficulty": "Médio",
+        "question_text": "Qual o pilar da POO que se refere à capacidade de um método se comportar de maneiras diferentes, dependendo do objeto que o invoca?",
+        "correct_answer": "Polimorfismo",
+        "incorrect_answers": ["Herança", "Encapsulamento", "Abstração"]
+    },
+    {
+        "category": "Arquitetura",
+        "difficulty": "Difícil",
+        "question_text": "Qual o principal objetivo da arquitetura de Microserviços?",
+        "correct_answer": "Dividir a aplicação em serviços menores e independentes que se comunicam via API.",
+        "incorrect_answers": ["Garantir que todo o código esteja em um único repositório.", "Executar o sistema em um único servidor.", "Usar apenas uma linguagem de programação."]
+    },
+    {
+        "category": "Arquitetura",
+        "difficulty": "Fácil",
+        "question_text": "O que caracteriza uma arquitetura monolítica?",
+        "correct_answer": "Toda a aplicação (front-end, back-end, lógica) está em uma única base de código.",
+        "incorrect_answers": ["Usa apenas containers Docker.", "O código é dividido em várias APIs.", "É um sistema baseado em nuvem."]
+    },
+    {
+        "category": "JavaScript",
+        "difficulty": "Médio",
+        "question_text": "Qual palavra-chave é usada para declarar uma variável cujo valor não pode ser reatribuído?",
+        "correct_answer": "const",
+        "incorrect_answers": ["var", "let", "static"]
+    },
+    {
+        "category": "JavaScript",
+        "difficulty": "Difícil",
+        "question_text": "O que é 'Hoisting' no JavaScript?",
+        "correct_answer": "O comportamento de mover declarações de variáveis e funções para o topo do escopo antes da execução do código.",
+        "incorrect_answers": ["Uma técnica para otimizar loops.", "Um tipo de erro de sintaxe.", "A forma como o JS gerencia eventos assíncronos."]
     },
     {
         "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "seq()",
-            "array()",
-            "list()"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
         "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "DELETE STRUCT",
-            "ERASE TABLE",
-            "REMOVE TABLE"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "classe",
-            "condicional"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "DELETE STRUCT",
-            "REMOVE TABLE",
-            "ERASE TABLE"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "FORM TABLE",
-            "MAKE TABLE",
-            "BUILD TABLE"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "MAKE TABLE",
-            "BUILD TABLE",
-            "FORM TABLE"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "SQL Injection",
-            "Trojan",
-            "Worm"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git import",
-            "git copy",
-            "git new"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "DELETE STRUCT",
-            "REMOVE TABLE",
-            "ERASE TABLE"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "BUILD TABLE",
-            "MAKE TABLE",
-            "FORM TABLE"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Cache",
-            "Processador",
-            "BIOS"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "SSL",
-            "FTP",
-            "HTTPS"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Man-in-the-middle",
-            "Phishing",
-            "Brute Force"
-        ]
+        "question_text": "Qual estrutura de dados em Python é ordenada, imutável e permite itens duplicados?",
+        "correct_answer": "Tupla (Tuple)",
+        "incorrect_answers": ["Lista (List)", "Dicionário (Dict)", "Conjunto (Set)"]
     },
     {
         "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "loop()",
-            "array()",
-            "list()"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "classe",
-            "atributo"
-        ]
+        "difficulty": "Médio",
+        "question_text": "O que a instrução 'pass' faz em um bloco de código vazio?",
+        "correct_answer": "Serve como um espaço reservado que não faz nada, evitando erro de sintaxe.",
+        "incorrect_answers": ["Ignora o bloco de código e sai da função.", "Gera um erro de tempo de execução.", "Transforma o bloco em comentário."]
     },
     {
         "category": "Segurança",
         "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Phishing",
-            "Man-in-the-middle"
-        ]
+        "question_text": "O que significa a sigla XSS?",
+        "correct_answer": "Cross-Site Scripting (Injeção de script malicioso em sites confiáveis).",
+        "incorrect_answers": ["Extra Server Security", "Extended System Setup", "XML Structure Schema"]
     },
     {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "size()",
-            "measure()",
-            "count()"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
+        "category": "Segurança",
         "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "ERASE TABLE",
-            "DELETE STRUCT",
-            "REMOVE TABLE"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Processador",
-            "RAM",
-            "Cache"
-        ]
+        "question_text": "O que é 'Criptografia Assimétrica'?",
+        "correct_answer": "Usa um par de chaves (pública e privada) para criptografar e descriptografar dados.",
+        "incorrect_answers": ["Usa a mesma chave (secreta) para criptografar e descriptografar.", "É um método exclusivo para bancos de dados.", "É o nome de um algoritmo de hash."]
     },
     {
         "category": "Redes",
         "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "ICMP",
-            "SSH",
-            "UDP"
-        ]
+        "question_text": "Qual é a principal função do protocolo ARP (Address Resolution Protocol)?",
+        "correct_answer": "Mapear endereços IP para endereços MAC (físicos) dentro da rede local.",
+        "incorrect_answers": ["Atribuir endereços IP automaticamente.", "Transferir arquivos grandes.", "Traduzir nomes de domínio."]
+    },
+    {
+        "category": "Redes",
+        "difficulty": "Difícil",
+        "question_text": "Qual classe de endereço IP é usada para grandes redes com muitos hosts (ex: grandes corporações)?",
+        "correct_answer": "Classe A",
+        "incorrect_answers": ["Classe C", "Classe B", "Classe D"]
+    },
+    {
+        "category": "Metodologias Ágeis",
+        "difficulty": "Médio",
+        "question_text": "Qual é a principal função do Scrum Master?",
+        "correct_answer": "Garantir que o time siga as regras do Scrum e remover impedimentos.",
+        "incorrect_answers": ["Priorizar as tarefas do produto.", "Programar a maior parte do código.", "Fazer o controle financeiro do projeto."]
+    },
+    {
+        "category": "Metodologias Ágeis",
+        "difficulty": "Médio",
+        "question_text": "O que é 'Time-box'?",
+        "correct_answer": "Um período fixo de tempo alocado para uma atividade (ex: uma reunião ou Sprint).",
+        "incorrect_answers": ["O tempo total de vida do projeto.", "Uma ferramenta de acompanhamento de tarefas.", "O tempo gasto em uma tarefa específica."]
+    },
+    {
+        "category": "DevOps",
+        "difficulty": "Médio",
+        "question_text": "Qual ferramenta é comumente usada para automação de configuração e gerenciamento de infraestrutura (Infrastructure as Code)?",
+        "correct_answer": "Ansible / Terraform",
+        "incorrect_answers": ["Git", "Postman", "Selenium"]
+    },
+    {
+        "category": "Banco de Dados",
+        "difficulty": "Difícil",
+        "question_text": "Qual é o principal objetivo da 'Normalização' em bancos de dados relacionais?",
+        "correct_answer": "Reduzir a redundância de dados e melhorar a integridade.",
+        "incorrect_answers": ["Aumentar a velocidade das consultas.", "Organizar o código do aplicativo.", "Criptografar as informações sensíveis."]
+    },
+    {
+        "category": "Banco de Dados",
+        "difficulty": "Difícil",
+        "question_text": "Em SQL, o que a cláusula 'HAVING' faz?",
+        "correct_answer": "Filtra os resultados após a agregação (GROUP BY).",
+        "incorrect_answers": ["Filtra os resultados antes da agregação (como WHERE).", "Define o tipo de JOIN.", "Cria uma nova coluna na tabela."]
+    },
+    {
+        "category": "POO",
+        "difficulty": "Médio",
+        "question_text": "Na POO, o que é um 'Objeto'?",
+        "correct_answer": "Uma instância de uma classe, que possui estado (atributos) e comportamento (métodos).",
+        "incorrect_answers": ["A definição abstrata de uma estrutura.", "Um tipo primitivo de dado.", "Um conceito exclusivo da linguagem C++."]
+    },
+    {
+        "category": "POO",
+        "difficulty": "Difícil",
+        "question_text": "O que o princípio 'DRY' (Don't Repeat Yourself) visa evitar?",
+        "correct_answer": "Duplicação de código e lógica em diferentes partes do sistema.",
+        "incorrect_answers": ["Uso excessivo de variáveis globais.", "Herança de classes complexas.", "Criação de muitos objetos."]
+    },
+    {
+        "category": "Front-End",
+        "difficulty": "Difícil",
+        "question_text": "Qual é o objetivo principal do Webpack?",
+        "correct_answer": "Empacotar (bundling) módulos de código (JS, CSS) e ativos para otimização do carregamento.",
+        "incorrect_answers": ["Compilar código Python para o navegador.", "Fazer chamadas AJAX assíncronas.", "Gerenciar o estado de componentes React."]
+    },
+    {
+        "category": "Front-End",
+        "difficulty": "Médio",
+        "question_text": "Em JavaScript, o que significa 'Escopo' (Scope)?",
+        "correct_answer": "O conjunto de variáveis, funções e objetos que você tem acesso em uma determinada parte do código.",
+        "incorrect_answers": ["O tamanho total do código fonte.", "A velocidade de execução da página.", "O número de erros no console."]
+    },
+    {
+        "category": "HTML/Acessibilidade",
+        "difficulty": "Médio",
+        "question_text": "Para que serve o atributo 'alt' em uma tag <img>?",
+        "correct_answer": "Fornecer um texto alternativo para leitores de tela e quando a imagem não carrega.",
+        "incorrect_answers": ["Definir a cor de fundo da imagem.", "Redimensionar a imagem.", "Definir o título da página."]
+    },
+    {
+        "category": "Linux",
+        "difficulty": "Médio",
+        "question_text": "Qual comando é usado para copiar arquivos e diretórios no Linux?",
+        "correct_answer": "cp",
+        "incorrect_answers": ["mv", "copy", "transfer"]
+    },
+    {
+        "category": "Estrutura de Dados",
+        "difficulty": "Médio",
+        "question_text": "Qual princípio rege a estrutura de dados Pilha (Stack)?",
+        "correct_answer": "LIFO (Last In, First Out - Último a entrar, primeiro a sair)",
+        "incorrect_answers": ["FIFO (First In, First Out)", "FILO (First In, Last Out)", "RANDOM"]
+    },
+    {
+        "category": "Cloud Computing",
+        "difficulty": "Médio",
+        "question_text": "O que é IaaS (Infrastructure as a Service)?",
+        "correct_answer": "Oferece infraestrutura básica, como máquinas virtuais, armazenamento e redes.",
+        "incorrect_answers": ["Oferece software pronto para uso (ex: Gmail).", "Oferece um ambiente completo para desenvolvimento (ex: Heroku).", "É o gerenciamento de código fonte."]
+    },
+    {
+        "category": "Hardware",
+        "difficulty": "Difícil",
+        "question_text": "Qual a diferença entre Memória RAM e Cache de CPU?",
+        "correct_answer": "Cache é muito menor, mais rápida e mais próxima da CPU que a RAM.",
+        "incorrect_answers": ["RAM armazena dados permanentemente, Cache é temporário.", "Cache armazena dados de vídeo, RAM armazena dados de som.", "Não há diferença, são o mesmo componente."]
     },
     {
         "category": "Segurança",
         "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Man-in-the-middle",
-            "Phishing"
-        ]
+        "question_text": "O que é Engenharia Social?",
+        "correct_answer": "Ataque que explora a confiança e manipulação psicológica das pessoas para obter informações.",
+        "incorrect_answers": ["Ataque feito exclusivamente através de falhas de software.", "Uma forma de criptografar senhas.", "O processo de criação de APIs."]
     },
     {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "CSS",
-            "Node.js",
-            "SQL"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "count()",
-            "measure()",
-            "length()"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git connect",
-            "git join",
-            "git union"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "HTML",
-            "PHP",
-            "JavaScript"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "UDP",
-            "ICMP",
-            "ARP"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "REMOVE TABLE",
-            "ERASE TABLE",
-            "DELETE STRUCT"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "REMOVE TABLE",
-            "DELETE STRUCT",
-            "ERASE TABLE"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "SSH",
-            "ICMP",
-            "UDP"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "ERASE TABLE",
-            "DELETE STRUCT",
-            "REMOVE TABLE"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "SQL",
-            "CSS",
-            "Node.js"
-        ]
-    },
-    {
-        "category": "Segurança",
+        "category": "POO",
         "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Man-in-the-middle",
-            "Phishing"
-        ]
+        "question_text": "O que é uma Classe Abstrata?",
+        "correct_answer": "Uma classe que não pode ser instanciada diretamente, mas serve como base (herança) para outras classes.",
+        "incorrect_answers": ["Uma classe que possui apenas atributos estáticos.", "Uma classe que só pode ter um único objeto.", "Uma classe que sempre precisa de um construtor."]
     },
     {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "BUILD TABLE",
-            "MAKE TABLE",
-            "FORM TABLE"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Processador",
-            "Cache",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "BIOS",
-            "RAM",
-            "Cache"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "ARP",
-            "UDP",
-            "SSH"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "FORM TABLE",
-            "MAKE TABLE",
-            "BUILD TABLE"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "classe",
-            "atributo",
-            "condicional"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "SSL",
-            "SCP",
-            "FTP"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "classe",
-            "condicional"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "FTP",
-            "SNMP",
-            "SMTP"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "measure()",
-            "count()",
-            "length()"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "ERASE TABLE",
-            "DELETE STRUCT",
-            "REMOVE TABLE"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "RAM",
-            "BIOS",
-            "Cache"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "REMOVE TABLE",
-            "ERASE TABLE",
-            "DELETE STRUCT"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "HTML",
-            "PHP",
-            "JavaScript"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git connect",
-            "git join"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "Node.js",
-            "SQL",
-            "CSS"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "FORM TABLE",
-            "MAKE TABLE",
-            "BUILD TABLE"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "SNMP",
-            "SMTP",
-            "DHCP"
-        ]
-    },
-    {
-        "category": "Segurança",
+        "category": "DevOps",
         "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Phishing",
-            "Man-in-the-middle"
-        ]
+        "question_text": "Qual é a função do 'Rolling Update' em um sistema de implantação contínua?",
+        "correct_answer": "Atualizar gradualmente as instâncias do aplicativo sem tirar o serviço do ar (zero downtime).",
+        "incorrect_answers": ["Desligar todo o sistema e subir uma nova versão.", "Fazer o backup do banco de dados.", "Atualizar o código no repositório Git."]
     },
     {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "loop()",
-            "array()",
-            "seq()"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git new",
-            "git copy",
-            "git import"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "SSH",
-            "ICMP",
-            "UDP"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Brute Force",
-            "Man-in-the-middle"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "condicional",
-            "classe"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "condicional",
-            "classe"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "BUILD TABLE",
-            "FORM TABLE",
-            "MAKE TABLE"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git new",
-            "git import",
-            "git copy"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "Node.js",
-            "SQL",
-            "CSS"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "FTP",
-            "DHCP",
-            "SNMP"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git import",
-            "git new",
-            "git copy"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "UDP",
-            "SSH",
-            "ARP"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "array",
-            "ponteiro",
-            "hashmap"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git import",
-            "git new",
-            "git copy"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "count()",
-            "measure()",
-            "size()"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "ARP",
-            "SSH",
-            "UDP"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "Cooler",
-            "Fonte",
-            "SSD"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "FTP",
-            "SMTP",
-            "SNMP"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "atributo",
-            "classe"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Cache",
-            "BIOS",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "HTML",
-            "PHP",
-            "JavaScript"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "PHP",
-            "JavaScript",
-            "HTML"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "Cooler",
-            "SSD",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "SSD",
-            "Fonte",
-            "Cooler"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "MAKE TABLE",
-            "FORM TABLE",
-            "BUILD TABLE"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "array()",
-            "seq()",
-            "loop()"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git join",
-            "git connect"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "classe",
-            "condicional"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'input()' em Python?",
-        "correct_answer": "input()",
-        "incorrect_answers": [
-            "read()",
-            "capture()",
-            "scan()"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "FORM TABLE",
-            "MAKE TABLE",
-            "BUILD TABLE"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "HTTPS",
-            "SCP",
-            "SSL"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "SMTP",
-            "DHCP",
-            "FTP"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "SQL Injection",
-            "Worm",
-            "Trojan"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "SSD",
-            "Cooler",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Processador",
-            "BIOS",
-            "Cache"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Man-in-the-middle",
-            "Phishing"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git connect",
-            "git join",
-            "git union"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "SMTP",
-            "FTP",
-            "SNMP"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "Node.js",
-            "SQL",
-            "CSS"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "Node.js",
-            "CSS",
-            "SQL"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "HTML",
-            "JavaScript",
-            "PHP"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Cache",
-            "Processador",
-            "BIOS"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "SNMP",
-            "SMTP",
-            "FTP"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "SSD",
-            "Fonte",
-            "Cooler"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "JavaScript",
-            "HTML",
-            "PHP"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "RAM",
-            "Processador",
-            "Cache"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "ARP",
-            "UDP",
-            "SSH"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "RAM",
-            "Fonte",
-            "SSD"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "CSS",
-            "Node.js",
-            "SQL"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "BUILD TABLE",
-            "FORM TABLE",
-            "MAKE TABLE"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "atributo",
-            "classe"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "RAM",
-            "Processador",
-            "BIOS"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "FTP",
-            "HTTPS",
-            "SSL"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Cache",
-            "RAM",
-            "BIOS"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "size()",
-            "measure()",
-            "length()"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "count()",
-            "length()",
-            "size()"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "array()",
-            "list()",
-            "loop()"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "Fonte",
-            "Cooler",
-            "SSD"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "HTTPS",
-            "SSL",
-            "SCP"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "SQL",
-            "Node.js",
-            "CSS"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "Trojan",
-            "Worm",
-            "SQL Injection"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "classe",
-            "condicional",
-            "atributo"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "loop()",
-            "array()",
-            "list()"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "REMOVE TABLE",
-            "ERASE TABLE",
-            "DELETE STRUCT"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git import",
-            "git new"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "RAM",
-            "Cooler",
-            "Fonte"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "Trojan",
-            "Worm",
-            "SQL Injection"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git new",
-            "git import"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "FTP",
-            "SSL",
-            "HTTPS"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "HTML",
-            "JavaScript",
-            "PHP"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Phishing",
-            "Man-in-the-middle"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "DELETE STRUCT",
-            "ERASE TABLE",
-            "REMOVE TABLE"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "HTML",
-            "PHP",
-            "JavaScript"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "DELETE STRUCT",
-            "REMOVE TABLE",
-            "ERASE TABLE"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "ERASE TABLE",
-            "DELETE STRUCT",
-            "REMOVE TABLE"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "SQL",
-            "CSS",
-            "Node.js"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "RAM",
-            "Cooler",
-            "Fonte"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "Trojan",
-            "Worm",
-            "SQL Injection"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "SQL",
-            "Node.js",
-            "CSS"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "hashmap",
-            "array",
-            "ponteiro"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "SSL",
-            "FTP",
-            "SCP"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "Cooler",
-            "RAM",
-            "SSD"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'input()' em Python?",
-        "correct_answer": "input()",
-        "incorrect_answers": [
-            "read()",
-            "capture()",
-            "scan()"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "classe",
-            "condicional"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "SQL",
-            "Node.js",
-            "CSS"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git join",
-            "git connect",
-            "git union"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "size()",
-            "count()",
-            "length()"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git connect",
-            "git join",
-            "git union"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "ponteiro",
-            "array",
-            "hashmap"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git new",
-            "git import",
-            "git copy"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "SQL",
-            "Node.js",
-            "CSS"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "DHCP",
-            "SMTP",
-            "FTP"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "atributo",
-            "classe"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "size()",
-            "count()",
-            "measure()"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "CSS",
-            "SQL",
-            "Node.js"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "classe",
-            "atributo"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git import",
-            "git new"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "REMOVE TABLE",
-            "ERASE TABLE",
-            "DELETE STRUCT"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "classe",
-            "atributo"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'input()' em Python?",
-        "correct_answer": "input()",
-        "incorrect_answers": [
-            "capture()",
-            "scan()",
-            "listen()"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "CSS",
-            "SQL",
-            "Node.js"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "measure()",
-            "size()",
-            "count()"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "FORM TABLE",
-            "BUILD TABLE",
-            "MAKE TABLE"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "FTP",
-            "SCP",
-            "SSL"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "SNMP",
-            "FTP",
-            "SMTP"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git copy",
-            "git import",
-            "git new"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git new",
-            "git copy",
-            "git import"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "SQL Injection",
-            "Worm",
-            "Trojan"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "DHCP",
-            "SMTP",
-            "SNMP"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "CSS",
-            "Node.js",
-            "SQL"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "Cooler",
-            "RAM",
-            "SSD"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "JavaScript",
-            "PHP",
-            "HTML"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "SSD",
-            "Cooler",
-            "Fonte"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "count()",
-            "length()",
-            "measure()"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "Trojan",
-            "SQL Injection",
-            "Worm"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "MAKE TABLE",
-            "FORM TABLE",
-            "BUILD TABLE"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Processador",
-            "BIOS",
-            "Cache"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "list()",
-            "array()",
-            "loop()"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "condicional",
-            "classe"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git join",
-            "git connect"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "array",
-            "ponteiro",
-            "hashmap"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo HTTP?",
-        "correct_answer": "HTTP",
-        "incorrect_answers": [
-            "FTP",
-            "SSL",
-            "HTTPS"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git connect",
-            "git join"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "SQL Injection",
-            "Trojan",
-            "Worm"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo TCP?",
-        "correct_answer": "TCP",
-        "incorrect_answers": [
-            "ICMP",
-            "UDP",
-            "ARP"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "condicional",
-            "classe",
-            "atributo"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "BUILD TABLE",
-            "MAKE TABLE",
-            "FORM TABLE"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "SMTP",
-            "SNMP",
-            "DHCP"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "BIOS",
-            "Cache",
-            "Processador"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "FORM TABLE",
-            "BUILD TABLE",
-            "MAKE TABLE"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git join",
-            "git connect"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Phishing",
-            "Man-in-the-middle",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git connect",
-            "git join"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Cache",
-            "Processador",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque Brute Force?",
-        "correct_answer": "Brute Force",
-        "incorrect_answers": [
-            "Worm",
-            "SQL Injection",
-            "Trojan"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git union",
-            "git join",
-            "git connect"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "length()",
-            "size()",
-            "measure()"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git import",
-            "git new",
-            "git copy"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "REMOVE TABLE",
-            "DELETE STRUCT",
-            "ERASE TABLE"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "Fonte",
-            "SSD",
-            "Cooler"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "Node.js",
-            "CSS",
-            "SQL"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git new",
-            "git import",
-            "git copy"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "SQL",
-            "Node.js",
-            "CSS"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "RAM",
-            "Processador",
-            "Cache"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git new",
-            "git copy",
-            "git import"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "BIOS",
-            "Processador",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Phishing",
-            "Man-in-the-middle"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Phishing",
-            "Man-in-the-middle"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "MAKE TABLE",
-            "FORM TABLE",
-            "BUILD TABLE"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "loop()",
-            "seq()",
-            "array()"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "RAM",
-            "Processador",
-            "Cache"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Brute Force",
-            "Man-in-the-middle",
-            "Phishing"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git merge' no Git?",
-        "correct_answer": "git merge",
-        "incorrect_answers": [
-            "git join",
-            "git connect",
-            "git union"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "array()",
-            "loop()",
-            "list()"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "Fonte",
-            "SSD",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "list()",
-            "seq()",
-            "array()"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "RAM",
-            "Cooler",
-            "Fonte"
-        ]
-    },
-    {
-        "category": "Programação Web",
+        "category": "Lógica",
         "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para manipular o DOM?",
-        "correct_answer": "manipular o DOM",
-        "incorrect_answers": [
-            "Node.js",
-            "CSS",
-            "SQL"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Processador",
-            "BIOS",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'input()' em Python?",
-        "correct_answer": "input()",
-        "incorrect_answers": [
-            "listen()",
-            "capture()",
-            "read()"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por executar instruções lógicas e matemáticas?",
-        "correct_answer": "executar instruções lógicas e matemáticas",
-        "incorrect_answers": [
-            "SSD",
-            "Cooler",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "BIOS",
-            "Cache",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "FTP",
-            "DHCP",
-            "SMTP"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "classe",
-            "condicional",
-            "atributo"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Man-in-the-middle",
-            "Phishing",
-            "Brute Force"
-        ]
-    },
-    {
-        "category": "Programação Web",
-        "difficulty": "Médio",
-        "question_text": "Qual tecnologia é usada para estilizar páginas web?",
-        "correct_answer": "estilizar páginas web",
-        "incorrect_answers": [
-            "PHP",
-            "HTML",
-            "JavaScript"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "REMOVE TABLE",
-            "ERASE TABLE",
-            "DELETE STRUCT"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "FTP",
-            "SMTP",
-            "DHCP"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para excluir uma tabela?",
-        "correct_answer": "excluir uma tabela",
-        "incorrect_answers": [
-            "DELETE STRUCT",
-            "REMOVE TABLE",
-            "ERASE TABLE"
-        ]
-    },
-    {
-        "category": "Banco de Dados",
-        "difficulty": "Médio",
-        "question_text": "Qual comando SQL é usado para criar uma tabela?",
-        "correct_answer": "criar uma tabela",
-        "incorrect_answers": [
-            "BUILD TABLE",
-            "FORM TABLE",
-            "MAKE TABLE"
-        ]
-    },
-    {
-        "category": "Segurança",
-        "difficulty": "Difícil",
-        "question_text": "O que caracteriza um ataque DDoS?",
-        "correct_answer": "DDoS",
-        "incorrect_answers": [
-            "Man-in-the-middle",
-            "Brute Force",
-            "Phishing"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "array()",
-            "list()",
-            "seq()"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "count()",
-            "measure()",
-            "size()"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "classe",
-            "atributo",
-            "condicional"
-        ]
-    },
-    {
-        "category": "Hardware",
-        "difficulty": "Fácil",
-        "question_text": "O que é responsável por armazenar dados permanentemente?",
-        "correct_answer": "armazenar dados permanentemente",
-        "incorrect_answers": [
-            "Processador",
-            "BIOS",
-            "RAM"
-        ]
-    },
-    {
-        "category": "Redes",
-        "difficulty": "Médio",
-        "question_text": "Qual a função do protocolo DNS?",
-        "correct_answer": "DNS",
-        "incorrect_answers": [
-            "DHCP",
-            "SMTP",
-            "SNMP"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'len()' em Python?",
-        "correct_answer": "len()",
-        "incorrect_answers": [
-            "size()",
-            "measure()",
-            "length()"
-        ]
-    },
-    {
-        "category": "Python",
-        "difficulty": "Fácil",
-        "question_text": "Para que serve o comando 'range()' em Python?",
-        "correct_answer": "range()",
-        "incorrect_answers": [
-            "list()",
-            "loop()",
-            "seq()"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "classe",
-            "condicional",
-            "atributo"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "array",
-            "ponteiro",
-            "hashmap"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa condicional IF?",
-        "correct_answer": "condicional IF",
-        "incorrect_answers": [
-            "ponteiro",
-            "array",
-            "hashmap"
-        ]
-    },
-    {
-        "category": "Git",
-        "difficulty": "Médio",
-        "question_text": "Para que serve o comando 'git clone' no Git?",
-        "correct_answer": "git clone",
-        "incorrect_answers": [
-            "git import",
-            "git copy",
-            "git new"
-        ]
-    },
-    {
-        "category": "Algoritmos",
-        "difficulty": "Fácil",
-        "question_text": "Qual é a finalidade de um algoritmo que usa laço de repetição?",
-        "correct_answer": "laço de repetição",
-        "incorrect_answers": [
-            "atributo",
-            "classe",
-            "condicional"
-        ]
+        "question_text": "Em um fluxograma, qual símbolo é tipicamente usado para representar uma decisão (condicional)?",
+        "correct_answer": "Losango (Diamante)",
+        "incorrect_answers": ["Retângulo", "Círculo", "Seta"]
     }
 ]
