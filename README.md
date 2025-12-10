@@ -5,6 +5,8 @@
 ![Context](https://img.shields.io/badge/SENAI-Dev%20Systems-red?style=for-the-badge)
 
 > **Um jogo de perguntas e respostas via Terminal (CLI) desenvolvido para testar conhecimentos, desafiar colegas e descontrair nos laboratórios do SENAI.**
+> <img width="771" height="574" alt="image" src="https://github.com/user-attachments/assets/ee79452f-a1d6-40ab-8e44-b317123fff7c" />
+
 
 ---
 
