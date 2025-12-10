@@ -1,47 +1,42 @@
 # 🚀 Tech Quiz Master | SENAI Edition
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![Database](https://img.shields.io/badge/SQLite-Local-green?style=for-the-badge&logo=sqlite)
-![Context](https://img.shields.io/badge/SENAI-Dev%20Systems-red?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-Local-green?style=for-the-badge&logo=sqlite)
+![SENAI](https://img.shields.io/badge/SENAI-Dev%20Systems-red?style=for-the-badge)
 
-> **Um jogo de perguntas e respostas via Terminal (CLI) desenvolvido para testar conhecimentos, desafiar colegas e descontrair nos laboratórios do SENAI.**
-> <img width="771" height="574" alt="image" src="https://github.com/user-attachments/assets/ee79452f-a1d6-40ab-8e44-b317123fff7c" />
-
-
----
-
-## 📖 Sobre o Projeto
-
-O **Tech Quiz Master** nasceu da necessidade de criar uma dinâmica de aprendizado divertida e offline. Focado em alunos do curso Técnico em Desenvolvimento de Sistemas, ele permite que os jogadores testem seus conhecimentos em Lógica, POO, Banco de Dados, Redes, Hardware e muito mais.
-
-O sistema roda localmente, utiliza um banco de dados SQLite para persistência e carrega questões personalizadas de um arquivo JSON, garantindo que o conteúdo esteja sempre alinhado com a grade curricular.
-
-## ⚙️ Funcionalidades
-
-* **🎮 Interface CLI Limpa:** Menus interativos, limpeza de tela automática e feedback visual.
-* **🔒 Sistema de Login:** Criação de conta e autenticação de usuários (com hash de senha).
-* **📊 Analytics:** Acompanhe seu desempenho com estatísticas de acertos e erros por matéria.
-* **🏆 Ranking Global:** Veja quem são os Top 10 melhores alunos da turma.
-* **📂 Banco de Questões Flexível:** As perguntas são carregadas de um arquivo `questoes.json`, facilitando a edição e adição de novos desafios.
-* **💾 Persistência de Dados:** Histórico de tentativas salvo automaticamente via SQLAlchemy.
+> **Jogo interativo de perguntas e respostas em Terminal (CLI), criado de forma autônoma e despretensiosa para diversão entre colegas do curso Técnico em Desenvolvimento de Sistemas.**
+>
+> **Sem fins acadêmicos, sem obrigatoriedade institucional — apenas pelo desafio técnico e pela brincadeira.**
+>
+> <img width="771" height="574" src="https://github.com/user-attachments/assets/ee79452f-a1d6-40ab-8e44-b317123fff7c" />
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📖 Visão Geral
 
-* **Linguagem:** Python 3
-* **ORM:** SQLAlchemy (Gerenciamento do Banco de Dados)
-* **Banco de Dados:** SQLite (Arquivo `tech_quiz.db`)
-* **Formato de Dados:** JSON
+O **Tech Quiz Master** surgiu como uma iniciativa independente entre alunos interessados em prática real de programação. A proposta é simples: transformar estudos do dia a dia em um ambiente competitivo, leve e totalmente offline.
+
+O projeto utiliza um banco de dados SQLite para registrar usuários, tentativas e estatísticas, além de carregar perguntas estruturadas em um arquivo JSON. Ele funciona inteiramente no terminal, sem dependências externas além do Python e SQLAlchemy.
 
 ---
 
-## 🚀 Como Rodar o Jogo
+## ⚙️ Recursos Principais
 
-Siga os passos abaixo para executar o jogo no terminal:
+* **🎮 Interface CLI:** Navegação simples e direta via menus interativos.
+* **🔐 Autenticação:** Registro de usuários e login seguro com hash de senha.
+* **📊 Métricas de Desempenho:** Estatísticas personalizadas por tema (ex.: Lógica, POO, Banco de Dados, Redes, Hardware).
+* **🏆 Ranking:** Classificação global dos melhores jogadores.
+* **📂 Banco de Questões em JSON:** Expansão simples do conteúdo sem modificar o código.
+* **💾 Persistência Completa:** Histórico de acertos, erros e sessões salvo automaticamente.
 
-### 1. Pré-requisitos
-Certifique-se de ter o Python instalado. Você precisará instalar a biblioteca `SQLAlchemy`.
+---
 
-```bash
-pip install sqlalchemy
+## 🛠️ Stack Tecnológica
+
+* **Python 3**
+* **SQLAlchemy** (ORM para abstração do banco)
+* **SQLite** (banco local em arquivo)
+* **JSON** (estruturação do banco de questões)
+
+---
+
