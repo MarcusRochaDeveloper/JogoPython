@@ -159,7 +159,7 @@ def play_game(user):
     for i, q in enumerate(questions):
         print(f"\n--- PERGUNTA {i+1} ---")
         print(f"[Matéria: {q.category} | Nível: {q.difficulty}]")
-        print(f"❓ {q.question_text}")
+        print(f" {q.question_text}")
         
         options = json.loads(q.incorrect_answers)
         options.append(q.correct_answer)
