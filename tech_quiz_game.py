@@ -1,48 +1,49 @@
 import os
+import time
 import sys
 import random
 import hashlib
 import json
-import time
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Text, func, text
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
-from textwrap import dedent
 
-# ==============================================================================
+# ============================================================================== 
 # CONFIGURAÇÃO
-# ==============================================================================
-HOST_SERVIDOR = "localhost" # <--- SEU IP AQUI
+# ============================================================================== 
+HOST_SERVIDOR = "localhost"
 DB_USER = "root"
-DB_PASS = "123456"
+DB_PASS = ""
 DB_NAME = "tech_quiz"
+DB_PORT = 5506  
 
 # Cores ANSI
 C_R = "\033[0m"      # Reset
 C_C = "\033[96m"     # Ciano
 C_G = "\033[92m"     # Verde
 C_Y = "\033[93m"     # Amarelo
-C_E = "\033[91m"     # Vermelho (Erro)
-C_B = "\033[1m"      # Negrito
+C_E = "\033[91m"     # Vermelho
+C_M = "\033[95m"     # Magenta
+C_B = "\033[1m"      # Bold
 
-# ==============================================================================
-# SETUP DO BANCO AUTOMÁTICO
-# ==============================================================================
+# ============================================================================== 
+# SETUP DO BANCO
+# ============================================================================== 
 def setup_database():
     print(f"{C_Y}📡 Conectando ao servidor...{C_R}")
     try:
-        # Conecta sem banco para criar se não existir
-        root_url = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{HOST_SERVIDOR}"
+        root_url = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{HOST_SERVIDOR}:{DB_PORT}"
         root_engine = create_engine(root_url, echo=False)
+
         with root_engine.connect() as conn:
             conn.execute(text(f"CREATE DATABASE IF NOT EXISTS {DB_NAME}"))
-        
-        # Conecta ao banco correto
-        db_url = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{HOST_SERVIDOR}/{DB_NAME}"
+
+        db_url = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{HOST_SERVIDOR}:{DB_PORT}/{DB_NAME}"
         engine = create_engine(db_url, echo=False, pool_recycle=3600)
         return engine
+
     except Exception as e:
-        print(f"\n{C_E}❌ ERRO CRÍTICO: Não foi possível conectar/criar o banco.{C_R}")
-        print(f"Detalhe: {e}")
+        print(f"{C_E}❌ ERRO: Não foi possível conectar ao banco.{C_R}")
+        print(e)
         sys.exit()
 
 engine = setup_database()
@@ -50,24 +51,24 @@ Session = sessionmaker(bind=engine)
 session = Session()
 Base = declarative_base()
 
-# ==============================================================================
+# ============================================================================== 
 # MODELOS
-# ==============================================================================
+# ============================================================================== 
 class User(Base):
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True)
-    username = Column(String(50), unique=True, nullable=False)
-    password_hash = Column(String(255), nullable=False)
+    username = Column(String(50), unique=True)
+    password_hash = Column(String(255))
     attempts = relationship("UserQuestionAttempt", back_populates="user")
 
 class Question(Base):
     __tablename__ = 'questions'
     id = Column(Integer, primary_key=True)
-    category = Column(String(100), nullable=False)
+    category = Column(String(100))
     difficulty = Column(String(50))
-    question_text = Column(Text, nullable=False)
-    correct_answer = Column(String(255), nullable=False)
-    incorrect_answers = Column(Text, nullable=False)
+    question_text = Column(Text)
+    correct_answer = Column(String(255))
+    incorrect_answers = Column(Text)
 
 class UserQuestionAttempt(Base):
     __tablename__ = 'attempts'
@@ -81,228 +82,405 @@ class UserQuestionAttempt(Base):
 
 Base.metadata.create_all(engine)
 
-# ==============================================================================
-# INTERFACE & UTILITÁRIOS
-# ==============================================================================
+# ============================================================================== 
+# INTERFACE / VISUAL
+# ============================================================================== 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def header():
     clear()
-    print(f"{C_C}")
-    print(r"""
-  _______ ______ _____ _    _   ____  _    _ _____ ______ 
- |__   __|  ____/ ____| |  | | / __ \| |  | |_   _|___  / 
-    | |  | |__ | |    | |__| || |  | | |  | | | |    / /  
-    | |  |  __|| |    |  __  || |  | | |  | | | |   / /   
-    | |  | |___| |____| |  | || |__| | |__| |_| |_ / /__  
-    |_|  |______\_____|_|  |_| \___\_\\____/|_____/_____| 
-                                      SENAI EDITION v2.0
+    print(f"{C_M}{C_B}")
+    print(r"""   
+                                                                                                                                                                                                                                                                                                                                                  
+████████╗███████╗ ██████╗██╗  ██╗ ██████╗ ██╗   ██╗██╗███████╗
+╚══██╔══╝██╔════╝██╔════╝██║  ██║██╔═══██╗██║   ██║██║╚══███╔╝
+   ██║   █████╗  ██║     ███████║██║   ██║██║   ██║██║  ███╔╝ 
+   ██║   ██╔══╝  ██║     ██╔══██║██║▄▄ ██║██║   ██║██║ ███╔╝  
+   ██║   ███████╗╚██████╗██║  ██║╚██████╔╝╚██████╔╝██║███████╗
+   ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝ ╚══▀▀═╝  ╚═════╝ ╚═╝╚══════╝    
+                                                                                                                                                                                                                                                                                                                                                                                                     
     """)
-    print(f"{C_R}" + "="*60 + "\n")
+    print(C_R)
 
-def loading(text):
-    sys.stdout.write(text)
+def loading(msg):
+    print(C_Y + msg + C_R, end="")
     for _ in range(3):
-        sys.stdout.write(".")
+        print(".", end="")
         sys.stdout.flush()
-        time.sleep(0.3)
-    print("")
+        time.sleep(0.25)
+    print()
+
+# ============================================================================== 
+# JSON SYNC
+# ============================================================================== 
+def export_questions_to_json():
+    data = []
+    questions = session.query(Question).all()
+
+    for q in questions:
+        data.append({
+            "category": q.category,
+            "difficulty": q.difficulty,
+            "question_text": q.question_text,
+            "correct_answer": q.correct_answer,
+            "incorrect_answers": json.loads(q.incorrect_answers)
+        })
+
+    with open("questoes.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
 
 def seed_database():
-    filename = 'questoes.json'
-    if not os.path.exists(filename): return
+    if not os.path.exists("questoes.json"):
+        return
+    if session.query(Question).count() > 0:
+        return
 
-    try:
-        # Se o banco já tem questões, não faz nada para não pesar a rede
-        if session.query(Question).count() > 0: return
+    with open("questoes.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
 
-        with open(filename, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            
-        count = 0
-        loading(f"{C_Y}🔄 Sincronizando banco de dados")
-        for item in data:
-            exists = session.query(Question).filter(Question.question_text == item['question_text']).first()
-            if not exists:
-                q = Question(
-                    category=item['category'],
-                    difficulty=item['difficulty'],
-                    question_text=item['question_text'],
-                    correct_answer=item['correct_answer'],
-                    incorrect_answers=json.dumps(item['incorrect_answers'])
-                )
-                session.add(q)
-                count += 1
-        session.commit()
-        if count > 0: print(f"{C_G}✅ {count} novas questões adicionadas!{C_R}")
-            
-    except Exception:
-        session.rollback()
+    for item in data:
+        q = Question(
+            category=item["category"],
+            difficulty=item["difficulty"],
+            question_text=item["question_text"],
+            correct_answer=item["correct_answer"],
+            incorrect_answers=json.dumps(item["incorrect_answers"])
+        )
+        session.add(q)
 
+    session.commit()
+
+# ============================================================================== 
+# LOGIN, REGISTRO
+# ============================================================================== 
 def hash_password(p):
     return hashlib.sha256(p.encode()).hexdigest()
 
-# ==============================================================================
-# LÓGICA
-# ==============================================================================
 def register():
     header()
-    print(f"{C_B}>>> CRIAÇÃO DE CONTA{C_R}")
-    username = input("👤 Usuário: ").strip()
-    
-    if session.query(User).filter_by(username=username).first():
-        print(f"\n{C_E}⚠️  Usuário já existe.{C_R}")
+    print(C_B + "📝 CRIAR CONTA\n" + C_R)
+
+    user = input("Usuário: ")
+    if session.query(User).filter_by(username=user).first():
+        print(C_E + "⚠ Usuário já existe!" + C_R)
         time.sleep(2)
         return None
-    
-    password = input("🔒 Senha: ").strip()
-    new_user = User(username=username, password_hash=hash_password(password))
-    session.add(new_user)
+
+    pwd = input("Senha: ")
+
+    u = User(username=user, password_hash=hash_password(pwd))
+    session.add(u)
     session.commit()
-    print(f"\n{C_G}✅ Conta criada com sucesso!{C_R}")
-    time.sleep(2)
-    return new_user
+
+    print(C_G + "✔ Conta criada!" + C_R)
+    time.sleep(1.5)
+    return u
 
 def login():
     header()
-    print(f"{C_B}>>> LOGIN{C_R}")
-    username = input("👤 Usuário: ").strip()
-    password = input("🔒 Senha: ").strip()
-    
-    user = session.query(User).filter_by(username=username, password_hash=hash_password(password)).first()
-    if user:
-        return user
-    else:
-        print(f"\n{C_E}❌ Credenciais inválidas.{C_R}")
-        time.sleep(2)
-        return None
+    print(C_B + "🔑 LOGIN\n" + C_R)
 
+    user = input("Usuário: ")
+    pwd = input("Senha: ")
+
+    u = session.query(User).filter_by(
+        username=user,
+        password_hash=hash_password(pwd)
+    ).first()
+
+    if u:
+        return u
+
+    print(C_E + "❌ Credenciais inválidas" + C_R)
+    time.sleep(2)
+    return None
+
+# ============================================================================== 
+# LOGIN DO PROFESSOR
+# ============================================================================== 
+def admin_login():
+    header()
+    print(C_B + "🛠 LOGIN DO PROFESSOR\n" + C_R)
+
+    user = input("Usuário: ")
+    pwd = input("Senha: ")
+
+    if user == "Professor" and pwd == "Administrador":
+        print(C_G + "✅ Acesso liberado!" + C_R)
+        time.sleep(1)
+        return True
+
+    print(C_E + "❌ Credenciais incorretas!" + C_R)
+    time.sleep(2)
+    return False
+
+# ============================================================================== 
+# JOGO  
+# ============================================================================== 
 def play_game(user):
-    loading(f"\n{C_Y}🎲 Sorteando questões")
-    try:
-        questions = session.query(Question).order_by(func.random()).limit(5).all()
-    except:
-        print(f"{C_E}Erro de conexão.{C_R}")
-        return
+    loading("Sorteando questões")
+    questions = session.query(Question).order_by(func.random()).limit(10).all()
 
     if not questions:
-        print(f"{C_E}⚠️ Banco de questões vazio.{C_R}")
-        time.sleep(2)
+        print(C_E + "Sem questões no banco!" + C_R)
         return
 
     score = 0
+
     for i, q in enumerate(questions):
+        opts = json.loads(q.incorrect_answers)
+        opts.append(q.correct_answer)
+        random.shuffle(opts)
+
+        while True:
+            header()
+            print(f"{C_B}QUESTÃO {i+1}/10{C_R}")
+            print(f"{C_C}[{q.category} - {q.difficulty}]{C_R}\n")
+            print(q.question_text + "\n")
+
+            for idx, op in enumerate(opts):
+                print(f"{C_Y}{idx+1}.{C_R} {op}")
+
+            ans = input("\nResposta (1-4): ").strip()
+
+            if ans == "":
+                print(f"{C_E}⚠ Você precisa escolher uma alternativa!{C_R}")
+                time.sleep(3)
+                continue
+            if not ans.isdigit() or int(ans) < 1 or int(ans) > len(opts):
+                print(f"{C_E}⚠ Opção inválida!{C_R}")
+                time.sleep(3)
+                continue
+
+            ans = int(ans)
+            break
+
+        correct = (opts[ans-1] == q.correct_answer)
+
         header()
-        print(f"{C_B}QUESTÃO {i+1} de 5{C_R}")
-        print(f"{C_C}[{q.category} | {q.difficulty}]{C_R}")
-        print(f"\n{C_B}{q.question_text}{C_R}\n")
-        
-        options = json.loads(q.incorrect_answers)
-        options.append(q.correct_answer)
-        random.shuffle(options)
-        
-        for idx, opt in enumerate(options):
-            print(f" {C_Y}{idx + 1}.{C_R} {opt}")
-            
-        try:
-            answ = int(input(f"\n{C_C}➤ Sua resposta:{C_R} "))
-            if options[answ - 1] == q.correct_answer:
-                print(f"\n{C_G}✅ CORRETO!{C_R}")
-                score += 1
-                correct = 1
-            else:
-                print(f"\n{C_E}❌ ERRADO! Era: {q.correct_answer}{C_R}")
-                correct = 0
-            
-            session.add(UserQuestionAttempt(
-                user_id=user.id, question_id=q.id, is_correct=correct, category=q.category
-            ))
-            session.commit()
-            time.sleep(1.5)
-            
-        except (ValueError, IndexError):
-            print(f"\n{C_E}⚠️ Resposta inválida.{C_R}")
-            time.sleep(1)
+        print(f"{C_B}QUESTÃO {i+1}/10{C_R}")
+        print(f"{C_C}[{q.category} - {q.difficulty}]{C_R}\n")
+        print(q.question_text + "\n")
+        for idx, op in enumerate(opts):
+            mark = ""
+            if op == q.correct_answer:
+                mark = f" {C_G}✔ CORRETA{C_R}" if correct else f" {C_G}✔ CORRETA{C_R}"
+            elif idx+1 == ans and not correct:
+                mark = f" {C_E}✘ SUA RESPOSTA{C_R}"
+            print(f"{C_Y}{idx+1}.{C_R} {op}{mark}")
+
+        if correct:
+            print(C_G + "\n✔ Correto!" + C_R)
+            score += 1
+        else:
+            print(C_E + "\n✘ Errado!" + C_R)
+            print(f"{C_C}A resposta correta era: {q.correct_answer}{C_R}")
+
+        session.add(UserQuestionAttempt(
+            user_id=user.id,
+            question_id=q.id,
+            is_correct=1 if correct else 0,
+            category=q.category
+        ))
+        session.commit()
+        time.sleep(5)
 
     header()
-    print(f"{C_B}🏁 FIM DA RODADA{C_R}")
-    print(f"Você acertou: {C_G}{score}/5{C_R}")
-    input("\nPressione Enter para voltar...")
+    print(f"🔥 Resultado final: {C_G}{score}/10{C_R}")
+    input("\nEnter para voltar...")
 
+# ============================================================================== 
+# ESTATÍSTICAS
+# ============================================================================== 
 def show_analytics(user):
     header()
+    print(f"{C_B}📊 Suas estatísticas{C_R}")
+
     total = session.query(UserQuestionAttempt).filter_by(user_id=user.id).count()
     correct = session.query(UserQuestionAttempt).filter_by(user_id=user.id, is_correct=1).count()
-    
-    print(f"{C_B}📊 ESTATÍSTICAS: {user.username.upper()}{C_R}")
-    if total > 0:
-        perc = (correct/total)*100
-        color = C_G if perc >= 70 else (C_Y if perc >= 50 else C_E)
-        print(f"\nTaxa de Acerto: {color}{perc:.1f}%{C_R} ({correct}/{total})")
-        
-        cats = session.query(
-            UserQuestionAttempt.category, 
-            func.count(UserQuestionAttempt.id), 
-            func.sum(UserQuestionAttempt.is_correct)
-        ).filter_by(user_id=user.id).group_by(UserQuestionAttempt.category).all()
-        
-        print("\nDesempenho por Matéria:")
-        for cat, t, c in cats:
-            c = int(c) if c else 0
-            print(f" • {cat}: {c}/{t}")
-    else:
-        print("Nenhum dado encontrado.")
+
+    if total == 0:
+        print("Sem dados ainda...")
+        input("Enter...")
+        return
+
+    print(f"\nTaxa de acerto: {C_G}{(correct/total)*100:.1f}%{C_R}")
+
     input("\nEnter para voltar...")
 
+# ============================================================================== 
+# RANKING
+# ============================================================================== 
 def show_ranking():
     header()
-    print(f"{C_Y}🏆 TOP 10 - RANKING GLOBAL{C_R}\n")
+    print(f"{C_Y}🏆 RANKING GLOBAL\n{C_R}")
+
     ranking = session.query(
-        User.username, 
-        func.sum(UserQuestionAttempt.is_correct)
+        User.username, func.sum(UserQuestionAttempt.is_correct)
     ).join(UserQuestionAttempt).group_by(User.id).order_by(func.sum(UserQuestionAttempt.is_correct).desc()).limit(10).all()
-    
+
     if not ranking:
         print("Ranking vazio.")
-    
-    for i, (name, pts) in enumerate(ranking):
-        pts = int(pts) if pts else 0
-        medal = "🥇" if i==0 else ("🥈" if i==1 else ("🥉" if i==2 else f"{i+1}."))
-        print(f" {medal} {name:<15} {C_G}{pts} pts{C_R}")
-        
+        input("Enter...")
+        return
+
+    for i, (name, pts) in enumerate(ranking, 1):
+        print(f"{i}. {name} — {pts} pts")
+
     input("\nEnter para voltar...")
 
+# ============================================================================== 
+# MENU DO PROFESSOR
+# ============================================================================== 
+def admin_menu():
+    while True:
+        header()
+        print(f"{C_B}🛠 MENU DO PROFESSOR{C_R}\n")
+        print("1. ➕ Adicionar questão")
+        print("2. ✏ Editar questão")
+        print("3. ❌ Remover questão")
+        print("4. 📋 Listar questões")
+        print("0. 🔙 Voltar")
+
+        op = input("\nOpção: ")
+
+        if op == "1": admin_add_question()
+        elif op == "2": admin_edit_question()
+        elif op == "3": admin_remove_question()
+        elif op == "4": admin_list_questions()
+        elif op == "0": return
+
+def admin_list_questions():
+    header()
+    print(f"{C_B}📋 QUESTÕES REGISTRADAS\n{C_R}")
+    qs = session.query(Question).all()
+
+    for q in qs:
+        print(f"{q.id}. [{q.category}] {q.question_text[:60]}...")
+
+    input("\nEnter para voltar...")
+
+def admin_add_question():
+    header()
+    print(f"{C_B}➕ NOVA QUESTÃO{C_R}")
+
+    cat = input("Categoria: ")
+    diff = input("Dificuldade: ")
+    text = input("Pergunta: ")
+    correct = input("Resposta correta: ")
+
+    print("\n3 respostas incorretas:")
+    inc = [input(f"- {i+1}: ") for i in range(3)]
+
+    q = Question(
+        category=cat, difficulty=diff,
+        question_text=text,
+        correct_answer=correct,
+        incorrect_answers=json.dumps(inc)
+    )
+    session.add(q)
+    session.commit()
+    export_questions_to_json()
+
+    print(C_G + "✔ Questão adicionada!" + C_R)
+    input("Enter...")
+
+def admin_edit_question():
+    admin_list_questions()
+    try:
+        qid = int(input("ID da questão: "))
+    except:
+        return
+
+    q = session.query(Question).filter_by(id=qid).first()
+    if not q:
+        print(C_E + "Questão não encontrada!" + C_R)
+        time.sleep(2)
+        return
+
+    header()
+    print(f"{C_B}✏ EDITAR — ID {q.id}{C_R}\n")
+
+    q.category = input(f"Categoria [{q.category}]: ") or q.category
+    q.difficulty = input(f"Dificuldade [{q.difficulty}]: ") or q.difficulty
+    q.question_text = input(f"Pergunta [{q.question_text}]: ") or q.question_text
+    q.correct_answer = input(f"Resposta correta [{q.correct_answer}]: ") or q.correct_answer
+
+    old_inc = json.loads(q.incorrect_answers)
+    new_inc = []
+    for i in range(3):
+        v = input(f"Incorreta {i+1} [{old_inc[i]}]: ")
+        new_inc.append(v if v else old_inc[i])
+
+    q.incorrect_answers = json.dumps(new_inc)
+    session.commit()
+    export_questions_to_json()
+
+    print(C_G + "✔ Atualizada!" + C_R)
+    input("Enter...")
+
+def admin_remove_question():
+    admin_list_questions()
+    try:
+        qid = int(input("ID da questão: "))
+    except:
+        return
+
+    q = session.query(Question).filter_by(id=qid).first()
+    if not q:
+        print(C_E + "Questão não encontrada!" + C_R)
+        time.sleep(2)
+        return
+
+    session.delete(q)
+    session.commit()
+    export_questions_to_json()
+
+    print(C_G + "✔ Removida!" + C_R)
+    input("Enter...")
+
+# ============================================================================== 
+# MENU PRINCIPAL
+# ============================================================================== 
 def main_menu():
     seed_database()
     user = None
     
     while True:
         header()
-        if user:
-            print(f"Bem-vindo, {C_C}{user.username}{C_R}!\n")
-            print(f"1. {C_G}🎮 Jogar Agora{C_R}")
-            print(f"2. {C_C}📊 Minhas Estatísticas{C_R}")
-            print(f"3. {C_Y}🏆 Ranking Global{C_R}")
-            print(f"4. 🚪 Logout")
-            print(f"0. ❌ Sair")
-        else:
-            print(f"1. 🔑 Login")
-            print(f"2. 📝 Criar Conta")
-            print(f"0. ❌ Sair")
-            
-        op = input(f"\n{C_B}Opção:{C_R} ")
-        
-        if not user:
-            if op == '1': user = login()
-            elif op == '2': user = register()
-            elif op == '0': sys.exit()
-        else:
-            if op == '1': play_game(user)
-            elif op == '2': show_analytics(user)
-            elif op == '3': show_ranking()
-            elif op == '4': user = None
-            elif op == '0': sys.exit()
+        print(f"{C_B}MENU PRINCIPAL{C_R}\n")
 
+        if user:
+            print("1. 🎮 Jogar")
+            print("2. 📊 Minhas Estatísticas")
+            print("3. 🏆 Ranking")
+            print("4. 🚪 Logout")
+            print("0. ❌ Sair")
+        else:
+            print("1. 🔑 Login")
+            print("2. 📝 Criar Conta")
+            print("3. 🛠 Login do Professor")
+            print("0. ❌ Sair")
+
+        op = input("\nOpção: ")
+
+        if not user:
+            if op == "1": user = login()
+            elif op == "2": user = register()
+            elif op == "3":
+                if admin_login():
+                    admin_menu()
+            elif op == "0": sys.exit()
+        else:
+            if op == "1": play_game(user)
+            elif op == "2": show_analytics(user)
+            elif op == "3": show_ranking()
+            elif op == "4": user = None
+            elif op == "0": sys.exit()
+
+# ============================================================================== 
+# START
+# ============================================================================== 
 if __name__ == "__main__":
     main_menu()
